@@ -57,8 +57,6 @@ export const Topbar = () => {
           <div className="hidden md:block">MONITOR</div>
         </Link>
 
-        <MobileDropdown />
-
         {/* Searchbar */}
         <div className="hidden lg:flex justify-center">
           <OmniSearch setOpen={setOmniOpen} />
