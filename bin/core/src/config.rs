@@ -122,6 +122,8 @@ pub fn core_config() -> &'static CoreConfig {
         .unwrap_or(config.ui_write_disabled),
       enable_new_users: env.monitor_enable_new_users
         .unwrap_or(config.enable_new_users),
+      allow_unauthenticated_reads: env.monitor_allow_unauthenticated_reads
+        .unwrap_or(config.allow_unauthenticated_reads),
       local_auth: env.monitor_local_auth.unwrap_or(config.local_auth),
       google_oauth: OauthCredentials {
         enabled: env
